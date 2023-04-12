@@ -65,7 +65,7 @@ body {
 /* hero background image */
 .bgimage {
     height: 100vh;
-    background: url(images/20230411_190335.jpg);
+    background: url('../images/20230411_190335.jpg');
     background-size: cover;
     position: relative;
 }
@@ -102,7 +102,7 @@ body {
     }
 
     .contactContent p {
-        font-size:1.3rem
+        font-size:rem
     }
 
 .contact-form-container {
