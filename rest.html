@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<HTML lang="en">
+<HEAD>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content=" = " IE="edge" />
+    <META NAME="viewport" Content="width=device-width, initial-scale=1.0" />
+
+    <!CSS>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <TITLE>Kevin Masson | Software Engineer</TITLE>
+</HEAD>
+<body>
+    <div class="container mt-4 pt-4">
+        <h1 class="text-center">Go Fish Rest Project</h1>
+        <div class="row mt-4">
+            <div class="col-lg-6">
+                <img src="images/rest-endpoint.png" class="endpointImage img-fluid" alt="">
+            </div>
+            <div class="col-lg-6">
+                <p style="font-size: x-large">
+                    During this group project we were tasked to take an already implemented program that runs a game of Go Fish and adapt it to a REST API.
+                    This was done in C++ using Corvussoft's Restbed and Niels Lohmann's JSON libraries. In this picture it shows an example of an
+                    endpoint I have implemented. This endpoint uses a GET request to check the players hand for a card, and if it exists it will remove
+                    the specified card. Here I added checks to reduce errors and ensure that the bulk of the code isnt run if there isn't a reason to. For example,
+                    the playercheck(p) is a simple function that checks if the int p is within the scope of possible players in the game. As well, this endpoint shows
+                    and example of my comfort in dealing with complex variables such as iterators, lists, and pointers.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-lg-6">
+                <img src="images/rest-test.png" class="endpointTestImage img-fluid" alt="" />
+            </div>
+            <div class="col-lg-6">
+                <p style="font-size: x-large">
+                    Here is an example of a test I wrote to test the functionality of getting a player's hand. This was done using Google's GTEST library
+                    and is run automatically from the makefile on compiling the project, along with a memory leak, static analysis, and style checker. This
+                    uses both ASSERT tests and EXPECT tests to check for functionality. If the response code from the server is not 200, then there was an
+                    error and the rest of the tests are irrelevant, and so I used an ASSERT test. If the JSON returned is valid, then I use EXPECT to
+                    check that the outcome is as expected.
+                </p>
+            </div>
+
+        </div>
+        <div class="text-center mt-2">
+            <a href="index.html" class="btn btn-success mr-1">Back</a>
+        </div>
+    </div>
+    <p> </p>
+
+</body>
+</HTML>
