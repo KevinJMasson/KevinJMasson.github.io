@@ -67,7 +67,8 @@ body {
     height: 100vh;
     background: url("../images/20230411_190335.jpg");
     background-size: cover;
-    position: center;
+    position: relative;
+    background-position: center;
 }
 /* text css above hero image*/
 .hero_title {
