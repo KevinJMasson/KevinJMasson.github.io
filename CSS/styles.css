@@ -65,10 +65,10 @@ body {
 /* hero background image */
 .bgimage {
     height: 100vh;
-    background: url("../images/20230411_190335.jpg");
+    background: url("../images/BG.jpg");
     background-size: cover;
     position: relative;
-    background-position: center;
+    background-position: 50% 80%;
 }
 /* text css above hero image*/
 .hero_title {
